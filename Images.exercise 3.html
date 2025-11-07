@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Exercise 2 - Media Elements</title>
+</head>
+
+<body>
+  <h1> exercise2:</h1> 
+  <ol class="Exercise">
+    <li>Images</li>
+    <li>Video</li>
+    <li>Audio</li>
+  </ol>
+   
+
+  <!-- ==== IMAGE TASK ==== -->
+  <h2 class="image">Image Section</h2>
+  <ul id="myimage" class="image">
+    <li>Local image with figure and figcaption</li>
+    <li>Clickable image that opens GU website in a new tab</li>
+   
+  </ul>
+
+  <!-- Local image with figure and figcaption -->
+  <figure>
+    <img src="images/galal.png" alt="Beautiful Flower" width="200" />
+    <figcaption>This is a flower image (islam.jpg)</figcaption>
+  </figure>
+
+  <!-- Clickable image that opens GU website in a new tab -->
+  <a href="https://www.gu.edu.eg/" target="_blank">
+    <img src="images/gu_logo.png" alt="Go to GU Website" width="200" />
+  </a>
+
+  <hr />
+
+  <!-- ==== VIDEO TASK ==== -->
+  <h3 id="myvideo" class="video">Video Section</h3>
+  <ul>
+    <li>Video file with controls, autoplay, and loop</li>
+    <li>Subtitles for the video</li>
+  </ul>
+
+
+  <video width="480" controls autoplay loop>
+    <source src="videos/sss.mp4" type="video/mp4" />
+    <track src="images/subtitles.vtt" kind="subtitles" srclang="en" label="English" default />
+    <p>Your browser does not support the video tag.</p>
+  </video>
+
+  <p id="inro">
+    (Video: campus.mp4 with subtitles from subtitles.vtt)</p>
+
+  <hr />
+
+  <!-- ==== AUDIO TASK ==== -->
+  <h4 class="audio">Audio Section</h4>
+  <ul id="myaudio" class="audio">
+    <li>Audio file with controls</li>
+    <li>Background music that loops automatically</li>
+
+  </ul>
+
+  <!-- Audio file with controls -->
+  <audio controls loop>
+    <source src="audio/car.mp3" type="audio/mpeg" />
+    Your browser does not support the audio tag.
+  </audio>
+
+  <br /><br />
+
+  <!-- Background music that loops automatically -->
+  <audio autoplay muted loop>
+    <source src="audio/car.mp3" type="audio/mpeg" />
+    Your browser does not support the audio tag.
+  </audio>
+</body>
+
+</html>
